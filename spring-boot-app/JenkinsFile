@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/rafi-gemhar33/jenkins-CICD.git'
+        sh 'echo passed'
+        // git branch: 'main', url: 'https://github.com/rafi-gemhar33/jenkins-CICD.git'
       }
     }
     stage('Build and Test') {
